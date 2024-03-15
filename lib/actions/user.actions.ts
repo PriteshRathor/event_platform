@@ -11,6 +11,7 @@ import { handleError } from '@/lib/utils'
 import { CreateUserParams, UpdateUserParams } from '@/types'
 
 export async function createUser(user: CreateUserParams) {
+  console.log("🚀 ~ createUser ~ user:", user)
   try {
     await connectToDatabase()
 
